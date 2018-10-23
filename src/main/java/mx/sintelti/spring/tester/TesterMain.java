@@ -1,17 +1,13 @@
 package mx.sintelti.spring.tester;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TesterMain {
     public static void main(String[] args) {
-        Tester tester = new Tester();
-        DVDPlayer dvdPlayer = new DVDPlayer();
-        tester.testDvd(dvdPlayer);
 
-        Mp3Player testerMp3Player = new Mp3Player();
-        tester.testMp3(testerMp3Player);
-
-        BlueRay blueRay = new BlueRay();
-        tester.blueRay(blueRay);
-
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Tester tester = applicationContext.getBean("tester", Tester.class); //spring crea los objetos en vez de nostros
+        tester.test();
 
     }
 }

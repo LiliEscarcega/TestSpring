@@ -1,25 +1,14 @@
 package mx.sintelti.spring.tester;
 
 public class Tester {
-
-    public void testDvd(DVDPlayer dvdPlayer) {
-        dvdPlayer.turnOn();
-        dvdPlayer.turnOff();
-        dvdPlayer.stop();
-        dvdPlayer.play();
+    private Device device;
+    public void test(){
+        device.play();
+        device.stop();
+        device.turnOff();
+        device.turnOn();
     }
-    public void testMp3(Mp3Player testerMp3Player){
-        testerMp3Player.apaga();
-        testerMp3Player.enciende();
-        testerMp3Player.pausa();
-        testerMp3Player.reproduce();
-
+    public void setDevice(Device device) {
+        this.device = device;
     }
-    public void blueRay (BlueRay blueRay){
-        blueRay.apaga();
-        blueRay.enciende();
-        blueRay.pausa();
-        blueRay.reproduce();
-    }
-
 }

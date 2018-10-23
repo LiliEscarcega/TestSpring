@@ -11,5 +11,12 @@
 
 
         <bean id="factura" class="mx.sintelti.spring.Factura"/>
-        <bean id="Tester" class="mx.sintelti.spring.tester.Tester"/>
+        <bean id="tester" class="mx.sintelti.spring.tester.Tester">
+            <property name="device" ref = "smart"> </property>
+        </bean>
+        <bean id="dvd" class="mx.sintelti.spring.tester.DVDPlayer"/>
+        <bean id="mp3" class="mx.sintelti.spring.tester.Mp3Player"/>
+        <bean id="blueray" class="mx.sintelti.spring.tester.BlueRay"/>
+        <bean id="smart" class="mx.sintelti.spring.tester.SmartPhonePlayer"/>
+
   </beans>

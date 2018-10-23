@@ -1,19 +1,19 @@
 package mx.sintelti.spring.tester;
 
-public class BlueRay {
-    public void enciende () {
+public class BlueRay implements Device{
+    public void turnOn () {
         System.out.println("BlueRay encendido BlueRay");
 
     }
-    public void reproduce (){
+    public void play (){
         System.out.println("BlueRay reproduciedo BlueRay");
 
     }
-    public void pausa (){
+    public void stop (){
         System.out.println("BlueRay en pausa BlueRay");
 
     }
-    public void apaga (){
+    public void turnOff (){
         System.out.println("BlueRay apagado Blueray");
 
     }
