@@ -16,9 +16,9 @@ out/
 *.pdf
 
 
-*.gradle
-*.classpath
-*.settings
-*.project
+.gradle
+.classpath
+.settings
+.project
 bin/
 build/
