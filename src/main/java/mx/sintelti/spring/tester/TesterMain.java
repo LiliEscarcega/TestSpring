@@ -8,6 +8,12 @@ public class TesterMain {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         Tester tester = applicationContext.getBean("tester", Tester.class); //spring crea los objetos en vez de nostros
         tester.test();
+        tester = applicationContext.getBean("testerdvd", Tester.class); //spring crea los objetos en vez de nostros
+        tester.test();
+        tester = applicationContext.getBean("testermp3", Tester.class); //spring crea los objetos en vez de nostros
+        tester.test();
+        tester = applicationContext.getBean("testerblueray", Tester.class); //spring crea los objetos en vez de nostros
+        tester.test();
 
     }
 }

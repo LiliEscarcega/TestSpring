@@ -15,8 +15,27 @@
             <property name="device" ref = "smart"> </property>
         </bean>
         <bean id="dvd" class="mx.sintelti.spring.tester.DVDPlayer"/>
-        <bean id="mp3" class="mx.sintelti.spring.tester.Mp3Player"/>
+        <!-- bean id="mp3" class="mx.sintelti.spring.tester.Mp3Player"/-->
         <bean id="blueray" class="mx.sintelti.spring.tester.BlueRay"/>
         <bean id="smart" class="mx.sintelti.spring.tester.SmartPhonePlayer"/>
+
+        <bean id="testerdvd" class="mx.sintelti.spring.tester.Tester">
+        <property name="device" ref = "dvd"> </property>
+        </bean>
+        <bean id="testermp3" class="mx.sintelti.spring.tester.Tester">
+        <property name="device" ref = "mp3Player"> </property>
+        </bean>
+        <bean id="testerblueray" class="mx.sintelti.spring.tester.Tester">
+        <property name="device" ref = "blueray"> </property>
+        </bean>
+
+        <bean id="pop" class="mx.sintelti.spring.tester.Pop"/>
+        <bean id="rock" class="mx.sintelti.spring.tester.Rock"/>
+        <bean id="banda" class="mx.sintelti.spring.tester.Banda"/>
+        <bean id="mp3Player" class="mx.sintelti.spring.tester.Mp3Player">
+                <property name="playList" ref = "pop"> </property>
+        </bean>
+
+
 
   </beans>
