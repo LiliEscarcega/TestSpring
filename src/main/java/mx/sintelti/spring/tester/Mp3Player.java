@@ -1,5 +1,6 @@
 package mx.sintelti.spring.tester;
-
+import org.springframework.stereotype.Component;
+@Component("tester")
 public class Mp3Player  implements Device {
     private PlayList playList;
     public void turnOn () {
